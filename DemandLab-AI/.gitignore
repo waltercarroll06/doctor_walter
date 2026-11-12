@@ -1,0 +1,31 @@
+# Entorno virtual y archivos generados por Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Variables de entorno locales
+.env
+.env.*
+!.env.example
+
+# Configuración local de editores
+.vscode/
+.idea/
+
+# Archivos temporales y copias locales
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+~$*
+
+# Metadatos del sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Los CSV pequeños, sintéticos o públicos pueden versionarse.
+# README.md, AGENTS.md y requirements.txt se conservan en Git.
