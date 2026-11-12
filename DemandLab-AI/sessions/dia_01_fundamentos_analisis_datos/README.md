@@ -1,22 +1,26 @@
 # Día 1 — Fundamentos de análisis de datos
 
-Ya tenía algunas bases con pandas. En esta sesión las reforcé trabajando con datos de ventas y aprendí nuevas formas de agrupar, resumir y analizar la información.
+**Estado: en progreso.** Mañana terminaré la evaluación.
+
+Ya tenía algunas bases con pandas. Hoy las reforcé trabajando con datos de ventas y aprendí nuevas formas de agrupar y analizar la información.
 
 ## Lo aprendido
 
-- Agrupar datos con `groupby()` por producto o por fecha y usar `sum()` para obtener totales de cantidades e ingresos.
-- Ordenar los resultados con `sort_values(ascending=False)` para ver los productos con mayores ingresos y con `sort_index()` para organizar las fechas cronológicamente.
-- Crear la columna `ingreso` multiplicando `cantidad` por `precio_unitario`.
-- Detectar valores faltantes con `isna()`, contarlos por columna con `isna().sum()` y filtrar las filas con cantidades o precios faltantes.
-- Filtrar cantidades negativas e identificar que hace falta revisar si corresponden a devoluciones u otra situación.
-- Convertir la columna de fechas con `pd.to_datetime()` y comprobar el cambio de tipo con `dtypes`.
-- Encontrar la fecha con mayores ingresos mediante `idxmax()` y obtener su valor con `max()`.
-- Comparar la suma de los ingresos agrupados por fecha con la suma de la columna `ingreso` para comprobar que coincidan.
+- **DataFrames y CSV:** crear una tabla con `pd.DataFrame()` y leer un CSV con `pd.read_csv()`. Repasé `head()`, `shape`, `dtypes` e `info()` para conocer los datos.
+- **Agrupar y sumar:** usar `groupby()` para agrupar por producto o fecha y `sum()` para sumar cantidades e ingresos.
+- **Valores faltantes:** detectarlos con `isna()` y contarlos por columna con `isna().sum()`.
+- **Ordenar:** usar `sort_values(ascending=False)` para ver los ingresos de mayor a menor y `sort_index()` para ordenar por fecha.
+- **Fechas:** convertirlas con `pd.to_datetime()`. Con `idxmax()` puedo encontrar la fecha del mayor ingreso y con `max()` ver ese valor.
+- **Ingresos:** calcular `cantidad × precio_unitario` y guardar el resultado en una nueva columna. También comparé la suma por fecha con el total de ingresos.
 
-También reforcé la creación de DataFrames desde diccionarios, la lectura de CSV con `pd.read_csv()` y la exploración de datos con `head()`, `shape`, `dtypes` e `info()`.
+## Notas para recordar
 
-En el archivo quedaron como referencia, todavía comentados y sin ejecutar, los cálculos de participación porcentual por producto e ingreso promedio por unidad.
+- Un valor faltante (`NaN`) no es lo mismo que cero. Si falta la cantidad o el precio, no puedo calcular el ingreso de esa fila. `sum()` omite los faltantes por defecto, así que el total puede estar incompleto.
+- Una cantidad negativa puede ser un error, un ajuste o una devolución. Debo revisar su origen antes de sacar conclusiones o borrar el registro.
+- Que las sumas coincidan no significa que todos los datos estén correctos. Tampoco debo confundir ingresos con beneficios: todavía faltaría descontar costos y gastos.
+- La participación porcentual y el ingreso promedio por unidad quedaron comentados como referencia para revisar. Un promedio puede ser engañoso si incluye unidades cuyo precio falta.
 
 ## Actividades
 
-Bueno en la actividad 2 sobre el csv de ller archivos y utilizando funcion isna e info pude notar que al urtlizar info me da la cantidad de columnas que utlizan los distintos tipos de variabnles ya sea tipo str o int u otro y con la funcion isna pude notar que en algunas filas habian valores faltantes y con isna pude ver en cada columan cuantas habian y si ponia sum me mostraba esa suma por columna pero si no ponia sum me mostrat linea por linea y  en donde estaba el fatltna con tru y false
+
+Bueno, en la actividad 2, al leer el archivo CSV y utilizar las funciones `isna()` e `info()`, pude notar que `info()` me muestra las columnas, sus tipos de datos y cuántos valores no nulos tienen. También muestra cuántas columnas hay de cada tipo. Con `isna()` pude notar que en algunas filas había valores faltantes. Si ponía `isna().sum()`, me mostraba la cantidad de faltantes por columna, pero si no ponía `sum()`, me mostraba fila por fila dónde faltaba un valor con `True` y dónde no con `False`.

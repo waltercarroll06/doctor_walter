@@ -12,7 +12,7 @@ A futuro, se espera construir un sistema capaz de recibir datos de ventas, prepa
 
 ## Estado inicial
 
-Este repositorio contiene únicamente la estructura y la documentación iniciales. No incluye datasets, análisis, modelos, automatizaciones ni pruebas implementadas. El ejercicio del Día 1 está pendiente y su archivo Python contiene solo un comentario. El entorno virtual y las dependencias se prepararán manualmente con el mentor.
+El Día 1 está **EN PROGRESO**. Incluye un CSV de ventas y ejercicios de pandas para explorar datos, detectar faltantes y agrupar cantidades e ingresos por producto y fecha. Los avances y resultados provisionales están documentados en el [README del Día 1](sessions/dia_01_fundamentos_analisis_datos/README.md). Quedan pendientes la validación de métricas, la interpretación personal y la evaluación final. El entorno virtual y las dependencias se prepararán manualmente con el mentor.
 
 ## Tecnologías
 
@@ -90,7 +90,7 @@ Cada semana contempla cinco sesiones de dos horas. Ninguna sesión se considera 
 
 | Semana | Sesiones completadas | Estado |
 | --- | --- | --- |
-| 1 | 0/5 | Pendiente |
+| 1 | 1/5 | Pendiente |
 | 2 | 0/5 | Pendiente |
 | 3 | 0/5 | Pendiente |
 | 4 | 0/5 | Pendiente |
@@ -111,4 +111,4 @@ Cada semana contempla cinco sesiones de dos horas. Ninguna sesión se considera 
 
 | Semana | Día | Tema | Estado | Registro |
 | --- | --- | --- | --- | --- |
-| 1 | 1 | Fundamentos de análisis de datos | Pendiente | [Día 1](sessions/dia_01_fundamentos_analisis_datos/README.md) |
+| 1 | 1 | Fundamentos de análisis de datos | EN PROGRESO | [Día 1](sessions/dia_01_fundamentos_analisis_datos/README.md) |
