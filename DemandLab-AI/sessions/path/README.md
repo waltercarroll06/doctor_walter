@@ -24,3 +24,27 @@ Ya tenía algunas bases con pandas. Hoy las reforcé trabajando con datos de ven
 
 
 Bueno, en la actividad 2, al leer el archivo CSV y utilizar las funciones `isna()` e `info()`, pude notar que `info()` me muestra las columnas, sus tipos de datos y cuántos valores no nulos tienen. También muestra cuántas columnas hay de cada tipo. Con `isna()` pude notar que en algunas filas había valores faltantes. Si ponía `isna().sum()`, me mostraba la cantidad de faltantes por columna, pero si no ponía `sum()`, me mostraba fila por fila dónde faltaba un valor con `True` y dónde no con `False`.
+
+
+# Día 2 — Limpieza y calidad de datos
+
+## ¿Qué aprendí?
+
+Aprendí a identificar valores faltantes con `isna()` y `notna()`, detectar duplicados, filtrar cantidades negativas y utilizar `dropna()` con `subset` para eliminar registros incompletos en columnas específicas.
+
+También aprendí a separar registros aceptados y rechazados mediante condiciones booleanas y a guardar los resultados en archivos CSV sin modificar los datos originales.
+
+## Conceptos importantes
+
+- `any()`: comprueba si al menos una condición es verdadera.
+- `all()`: comprueba si todas las condiciones son verdaderas.
+- `assert`: permite verificar condiciones durante la ejecución.
+- `to_csv(index=False)`: exporta un DataFrame sin agregar el índice.
+
+## Decisiones de limpieza
+
+No todos los valores faltantes deben reemplazarse por cero. Tampoco debemos eliminar automáticamente las cantidades negativas, porque podrían representar devoluciones.
+
+## Por mejorar
+
+Necesito practicar más las validaciones automáticas y comprender mejor cuándo utilizar `any()` y `all()`.

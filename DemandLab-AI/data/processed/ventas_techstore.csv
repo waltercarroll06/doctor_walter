@@ -1,0 +1,14 @@
+fecha,producto,categoria,cantidad,precio_unitario
+2026-11-01,Mouse,Accesorios,3.0,50000.0
+2026-11-01,Teclado,Accesorios,2.0,90000.0
+2026-11-02,Monitor,Pantallas,1.0,650000.0
+2026-11-02,Mouse,Accesorios,5.0,50000.0
+2026-11-03,Audifonos,Audio,4.0,120000.0
+2026-11-03,Teclado,Accesorios,2.0,90000.0
+2026-11-04,Monitor,Pantallas,2.0,650000.0
+2026-11-05,Teclado,Accesorios,-2.0,90000.0
+2026-11-06,Mouse,Accesorios,6.0,50000.0
+2026-11-06,Monitor,Pantallas,1.0,650000.0
+2026-11-07,Audifonos,Audio,2.0,120000.0
+2026-11-07,Teclado,Accesorios,3.0,90000.0
+2026-11-08,Mouse,Accesorios,4.0,50000.0
